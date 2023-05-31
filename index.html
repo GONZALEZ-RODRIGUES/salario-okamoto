@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora salário Okamoto Fujiarte</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <form>
+        <h1>Valor do trabalho por hora:</h1>
+        <!-- <p>[7:40 até 15:30] (total de horas trabalhadas: 6h45m)</p> -->
+        <select class="box" id="vHora" name="vHora">
+            <option>Valor em ienes</option>
+            <option value="1600">1.600</option>
+            <option value="1650">1.650</option>
+            <option value="1700">1.700</option>
+        </select>
+        <h1>Quantidade de dias turno 1:</h1>
+        <!-- <p>[7:40 até 15:30] (total de horas trabalhadas: 6h45m)</p> -->
+        <select class="box" id="dias_1" name="dias_1">
+            <option>Número de dias</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <h1>Quantidade de dias turno 2:</h1>
+        <!-- <p>[15:00 até 23:30] (total de horas trabalhadas: 7h25m)</p> -->
+        <select class="box" id="dias_2" name="dias_2">
+            <option>Número de dias</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <h1>Quantidade de dias turno 3:</h1>
+        <!-- <p>[23:20 até 7:50] (total de horas trabalhadas: 7h25m)</p> -->
+        <select class="box" id="dias_3" name="dias_3">
+            <option>Número de dias</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <h1>Valor do auxilio transporte por dia:</h1>
+        <input type="text" id="auxTransp" name="auxTransp" min="0" inputmode="decimal" pattern="[0-9]+([\.,][0-9]{1,2})?">
+        <br><br>
+        <input class="button" type="button" value="Mostrar salário" onclick="showSalary()" />
+        <br><br>
+    </form>
+    <p class="output" id="calc"> </p>
+</body>
+
+</html>
